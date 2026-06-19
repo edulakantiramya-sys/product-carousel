@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Carousel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" ></script>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <!-- navBav section -->
+     <nav class="navbar navbar-expand-lg navbar-primary bg-light">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Products
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">product-1</a></li>
+            <li><a class="dropdown-item" href="#">product-2</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+    
+      </ul>
+      <form class="d-flex">
+  <button
+    type="button"
+    class="btn btn-outline-success me-2"
+    data-bs-toggle="modal"
+    data-bs-target="#SignInModal">
+    Sign-in
+  </button>
+
+  <button
+    type="button"
+    class="btn btn-outline-success me-2"
+    data-bs-toggle="modal"
+    data-bs-target="#SignInModal">
+    Sign-up
+  </button>
+</form>
+    </div>
+  </div>
+</nav>
+<!-- card section -->
+ <section class="container d-flex my-5 gap-5">
+
+  <div class="card h-100" style="width: 18rem;">
+    <img src="images/product01.webp" class="card-img-top" alt="product">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Makeup Essentials Kit</h5>
+      <p class="card-text">
+        A complete makeup set including eyeshadow, blush, compact powder,
+        and brushes.
+      </p>
+      <a href="#" class="btn btn-primary mt-auto">View Details</a>
+    </div>
+  </div>
+
+  <div class="card h-100" style="width: 18rem;">
+    <img src="images/product02" class="card-img-top" alt="product">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Herbal Face Serum</h5>
+      <p class="card-text">
+        Lightweight face serum enriched with natural extracts. Helps reduce
+        dullness and hydrate skin.
+      </p>
+      <a href="#" class="btn btn-primary mt-auto">View Details</a>
+    </div>
+  </div>
+
+  <div class="card h-100" style="width: 18rem;">
+    <img src="images/product04.webp" class="card-img-top" alt="product">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Daily Skincare Combo</h5>
+      <p class="card-text">
+        A complete skincare routine with cleanser, moisturizer, and toner.
+        Keeps your skin fresh and healthy.
+      </p>
+      <a href="#" class="btn btn-primary mt-auto">View Details</a>
+    </div>
+  </div>
+
+  <div class="card h-100" style="width: 18rem;">
+    <img src="images/product05.webp" class="card-img-top" alt="product">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Beauty Starter Pack</h5>
+      <p class="card-text">
+        Includes premium skincare and makeup products suitable for all skin
+        types. Ideal for beginners.
+      </p>
+      <a href="#" class="btn btn-primary mt-auto">View Details</a>
+    </div>
+  </div>
+
+</section>
+</div>
+</section>
+<!-- carousel section -->
+ <section class="container my-5">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/carsouel01.jpg" class="d-block w-100" alt="carousel-image">
+    </div>
+    <div class="carousel-item">
+      <img src="images/carsouel02.jpg" class="d-block w-100" alt="carousel-image">
+    </div>
+    <div class="carousel-item">
+      <img src="images/carsouel03.jpg" class="d-block w-100" alt="carousel-image">
+    </div>
+     <div class="carousel-item">
+      <img src="images/carsouel04.jpg" class="d-block w-100" alt="carousel-image">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+ </section>
+<!-- footer section -->
+ <footer class="bg-primary  text-white text-center py-4">
+    <p class="mb-2">&copy;ProductsView | All Rights Reserved</p>
+ </footer>
+ <!-- sign-in model -->
+  <div class="modal" tabindex="-1" id="SignInModal"  tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Sign-in</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+            <div>
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control"
+ placeholder="enter email">
+ <br>
+ <label class="form-label">password</label>
+                <input type="password" class="form-control"
+ placeholder="enter password">
+ <br>
+<div style="text-align:center;">
+  <input type="submit" value="Submit" class="btn btn-primary">
+</div>
+            </div>
+        </form>
+       
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!-- sign-Up model -->
+  <div class="modal" tabindex="-1" id="SignUpModal"  tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Sign-up</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+            <div>
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control"
+ placeholder="enter email">
+ <br>
+ <label class="form-label">password</label>
+                <input type="password" class="form-control"
+ placeholder="enter password">
+ <br>
+<div style="text-align:center;">
+  <input type="submit" value="Submit" class="btn btn-primary">
+</div>
+            </div>
+        </form>
+       
+      </div>
+      
+    </div>
+  </div>
+</div>
+</body>
+</html>
